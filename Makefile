@@ -15,7 +15,7 @@ endif
 
 CFLAGS=-Ijava_crw_demo -fno-strict-aliasing                                  \
         -fPIC -fno-omit-frame-pointer -W -Wall  -Wno-unused -Wno-parentheses \
-        -I$(JAVA_HEADERS) -Iinclude
+        -Iinclude -I/usr/lib/jvm/java-7-openjdk-amd64/include
 LDFLAGS=-fno-strict-aliasing -fPIC -fno-omit-frame-pointer \
         -static-libgcc -shared $(PLATFORM_LDFLAGS)
 
